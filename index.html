@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Joshua Barnes — Computer Science Student</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand" style="margin-left:12px">
+      <img src="assets/avatar-silhouette.svg" alt="Joshua Barnes">
+      <div>
+        <h1>Joshua Barnes</h1>
+        <div style="font-size:12px;color:var(--muted)">Computer Science Student</div>
+      </div>
+    </div>
+    <nav class="nav" style="margin-right:80px">
+      <a href="#" data-scroll-to="home">Home</a>
+      <a href="#" data-scroll-to="about">About</a>
+      <a href="#" data-scroll-to="resume">Resume</a>
+      <a href="#" data-scroll-to="projects">Projects</a>
+      <a href="#" data-scroll-to="orgs">Organizations</a>
+      <a href="#" data-scroll-to="contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" data-toggle-theme aria-label="Toggle theme">🌓</button>
+  </header>
+
+  <div class="canvas-wrap"><canvas id="wires-canvas" style="width:100%;height:420px;display:block"></canvas></div>
+
+  <main class="main" id="home">
+    <section class="section hero" style="align-items:center;">
+      <div class="intro">
+        <p class="lead">Hello — I'm</p>
+        <h2 class="huge">Joshua Barnes</h2>
+        <p class="lead">Computer Science Student at VSU — interested in coding, computer science, and writing.</p>
+        <p>My current goal is to create a small game to show others. I hope this experience helps me move toward a future career in software development.</p>
+        <div style="margin-top:14px">
+          <a class="badge" href="#projects" data-scroll-to="projects">View Projects</a>
+          <a class="badge" href="assets/resume-placeholder.pdf" download style="margin-left:8px">Download Resume</a>
+        </div>
+        <div class="grid-3" style="margin-top:18px">
+          <div class="card">
+            <strong>Skills</strong>
+            <p class="lead" style="margin-top:8px">Python · JavaScript</p>
+          </div>
+          <div class="card">
+            <strong>Focus</strong>
+            <p class="lead" style="margin-top:8px">Game development basics · Algorithms · Systems thinking</p>
+          </div>
+          <div class="card">
+            <strong>Current</strong>
+            <p class="lead" style="margin-top:8px">Member, Coding Club</p>
+          </div>
+        </div>
+      </div>
+      <aside class="card profile" style="width:240px;flex-shrink:0;text-align:center">
+        <img src="assets/avatar-silhouette.svg" alt="Joshua Barnes">
+        <div style="margin-top:10px;font-size:14px;color:var(--muted)">VSU — Computer Science Student</div>
+        <div style="margin-top:12px">
+          <a class="badge" href="mailto:joshuabarnes@ecloud.com">Email</a>
+          <a class="badge" href="#" style="margin-left:8px">GitHub</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section card">
+      <h2>About</h2>
+      <p>My name is Joshua Barnes. I am a computer science student at VSU and have an interest in computer science, coding, and writing. My current goal is to create a small game that I can show to others. I hope that this experience will help me in getting a future career.</p>
+      <h3 style="margin-top:10px">Interests</h3>
+      <ul>
+        <li>Game development and interactive systems</li>
+        <li>Algorithms and data structures</li>
+        <li>Technical writing and communication</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="section card">
+      <h2>Resume</h2>
+      <h3>Education</h3>
+      <p>Elementary, Middle School, and High School diplomas.</p>
+      <h3>Work Experience</h3>
+      <p><strong>Restaurant — Mascot & Cashier</strong><br>Part-time role developing customer service skills, teamwork, and reliability.</p>
+      <h3>Skills</h3>
+      <p>Python · JavaScript</p>
+      <p><a class="badge" href="assets/resume-placeholder.pdf" download>Download full resume (placeholder)</a></p>
+    </section>
+
+    <section id="projects" class="section card">
+      <h2>Projects</h2>
+      <p class="lead">Selected project from personal work.</p>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Brotato-style Small Game</h3>
+          <p>A compact action-roguelike inspired by Brotato. Built as a learning project to practice game loops, input handling, and simple AI. (Placeholder)</p>
+          <p><a class="badge" href="#">Project details</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="orgs" class="section card">
+      <h2>Organizations</h2>
+      <p>Member — Coding Club. Regular participation in coding sessions and workshops.</p>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <p>If you'd like to reach me, email <strong>joshuazb@icloud.com</strong> or send a message below.</p>
+      <form id="contact-form">
+        <div class="form-row">
+          <input class="input" name="name" placeholder="Your name">
+          <input class="input" name="email" type="email" placeholder="you@example.com">
+        </div><br>
+        <textarea name="message" placeholder="Tell me about your opportunity or question"></textarea><br>
+        <button class="badge" type="submit">Send message</button>
+      </form>
+    </section>
+
+    <div class="footer">© 2025 Joshua Barnes — Computer Science Student</div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
